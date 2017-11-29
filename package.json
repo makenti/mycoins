@@ -1,0 +1,23 @@
+{
+  "name": "mycoins-design",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "materialize-css": "^0.100.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/makenti/mycoins.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/makenti/mycoins/issues"
+  },
+  "homepage": "https://github.com/makenti/mycoins#readme"
+}

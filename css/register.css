@@ -23,3 +23,10 @@
 .modal.register-modal .modal-content { max-width: 360px; margin: 24px auto 32px; padding: 0;}
 .modal-content .content-title { font-size: 24px; }
 .submit-row { display: flex; justify-content: space-between; }
+
+
+.register-modal .tabs { background-color: #fafafa; color: #2F80ED; }
+.register-modal .tabs .tab a { color: rgba(0,0,0,0.5); }
+.register-modal .tabs .tab a:hover { color: rgba(0,0,0,0.7); }
+.register-modal .tabs .tab a.active { color: #2F80ED; }
+.register-modal .tabs .indicator { background-color: #2F80ED; }

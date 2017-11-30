@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>Starter Template - Materialize</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/register.css" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css"  media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  </head>
+
+  <body>
+    <nav class="light-blue lighten-1" role="navigation">
+      <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#">Navbar Link</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="side-nav">
+          <li><a href="#">Navbar Link</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+
+    <div class="section no-pad-bot" id="index-banner">
+      <div class="container">
+        <br><br>
+        <h1 class="header center orange-text">Starter Template</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        </div>
+        <div class="row center">
+          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="section">
+        <!-- Modal Trigger -->
+        <a class="waves-effect waves-light btn modal-trigger" href="#login-modal">Login Modal</a>
+
+        <!-- Modal Structure -->
+        <div id="login-modal" class="modal register-modal">
+          <div class="modal-header">
+            <div class="some-logo">C</div>
+            <div class="header-title">MyCoins</div>
+          </div>
+          <div class="modal-content">
+            <div class="content-title">Авторизация</div>
+            <div class="input-field col s12">
+              <input id="login" type="text" class="validate">
+              <label for="login">Логин</label>
+            </div>
+            <div class="input-field col s12">
+              <input id="password" type="password" class="validate">
+              <label for="password">Пароль</label>
+            </div>
+            <div class="col s12 submit-row">
+                <a class="waves-effect waves-blue btn-flat blue-btn no-padding">Выслать пароль</a>
+                <a class="waves-effect waves-light btn blue-btn round secondary">Войти</a>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="modal-footer-content">
+              <a class="waves-effect waves-light btn blue-btn round" href="#register-modal" onclick="registerModalOpen()">Зарегистрироваться</a>
+              <div class="logo-block">
+                <div class="some-logo">f</div>
+                <div class="some-logo">G</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="register-modal" class="modal register-modal">
+          <div class="modal-header">
+            <div class="some-logo">C</div>
+            <div class="header-title">MyCoins</div>
+          </div>
+          <div class="modal-content">
+            <div class="content-title">Регистрация</div>
+            <div class="col s12">
+              <ul class="tabs">
+                <li class="tab col s3"><a href="#test1">Test 1</a></li>
+                <li class="tab col s3"><a class="active" href="#test2">Test 2</a></li>
+                <li class="tab col s3 disabled"><a href="#test3">Disabled Tab</a></li>
+                <li class="tab col s3"><a href="#test4">Test 4</a></li>
+              </ul>
+            </div>
+            <div class="input-field col s12">
+              <input id="login" type="text" class="validate">
+              <label for="login">Логин</label>
+            </div>
+            <div class="input-field col s12">
+              <input id="password" type="password" class="validate">
+              <label for="password">Пароль</label>
+            </div>
+            <div class="col s12 submit-row">
+                <a class="waves-effect waves-light btn blue-btn round">Создать</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+    <script>
+      function registerModalOpen() {
+        $('#login-modal').modal('close');
+        $('#register-modal').modal('open');
+      }
+      $(document).ready(function(){
+        // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+        // $('#login-modal').modal();
+        $('#register-modal').modal();
+      });
+    </script>
+  </body>
+</html>

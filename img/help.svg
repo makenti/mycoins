@@ -1,0 +1,21 @@
+<svg width="36" height="36" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>iconmonstr-google-plus-2</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(848 -900)">
+<g id="iconmonstr-google-plus-2">
+<g id="Vector">
+<use xlink:href="#path0_fill" transform="translate(-848 900)" fill="#EB5757"/>
+<use xlink:href="#path0_fill" transform="translate(-848 900)" fill="#E0E0E0"/>
+</g>
+<g id="ic_help_black_24px">
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="translate(-834 911)" fill="#4F4F4F"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 18 0C 8.05887 0 0 8.05887 0 18L 0 18C 0 27.9411 8.05887 36 18 36L 18 36C 27.9411 36 36 27.9411 36 18L 36 18C 36 8.05887 27.9411 0 18 0L 18 0Z"/>
+<path id="path1_fill" d="M 5 14L 3 14L 3 12L 5 12L 5 14ZM 7.07 6.25L 6.17 7.17C 5.45 7.9 5 8.5 5 10L 3 10L 3 9.5C 3 8.4 3.45 7.4 4.17 6.67L 5.41 5.41C 5.78 5.05 6 4.55 6 4C 6 2.9 5.1 2 4 2C 2.9 2 2 2.9 2 4L 0 4C 0 1.79 1.79 0 4 0C 6.21 0 8 1.79 8 4C 8 4.88 7.64 5.68 7.07 6.25Z"/>
+</defs>
+</svg>

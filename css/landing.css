@@ -1,20 +1,38 @@
-header*/
+/*header*/
+body nav.white{
+	box-shadow: none;
+}
 .nav-wrapper{
 	padding-right: 40px;
 	padding-left: 40px;
+	max-width: 1440px;
+	margin: 0 auto;
 }
 .brand{
 	margin-right: 20px;
 }
+.brand img{
+	display: inline-block;
+	vertical-align: middle;
+}
 .brand span{
+	display: inline-block;
+	vertical-align: middle;
 	color: #4F4F4F;
 	font-size: 24px;
 	line-height: 1.17;
 	font-weight: 600;
 	margin-left: 8px;
 }
-.left li a{
-	margin: 0 5px;
+.brand a{
+	display: inline;
+	padding: 0;
+}
+.brand a:hover{
+	background-color: #fff;
+}
+.left li.link a{
+	padding: 0 20px;
 	color: #4F4F4F;
 	text-transform: uppercase;
 	font-size: 14px;
@@ -22,7 +40,8 @@ header*/
 }
 .btn-auth{
 	background-color: #fff;
-	border: 2px solid #2F80ED;
+	/*border: 2px solid #2F80ED;*/
+	border: none;
 	border-radius: 18px;
 	height: 36px;
 	font-size: 14px;
@@ -31,13 +50,21 @@ header*/
 	color: #2F80ED;
 	text-transform: uppercase;
 }
-.btn-auth:hover{
+.log{
+	border: 2px solid #2F80ED;
+}
+.log:hover{
+	background-color: #fff;
+}
+.log:focus{
+	background-color: #fff;
+}
+.reg:hover{
 	background-color: #2F80ED;
 	color: #fff;
 }
-.btn-auth:focus{
+.reg:focus{
 	background-color: #1661C7;
-	border-color: #1661C7;
 	color: #fff;
 }
 .reg{
@@ -47,11 +74,29 @@ header*/
 .right li{
 	margin-left: 8px;
 }
+div.circle-btn{
+	border-radius: 50%;
+	width: 36px;
+	height: 36px;
+	border: none;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+.fb{
+	background-color: #3B5998;	
+}
+.gplus{
+	background-color: #D34836;	
+}
 /*header*/
 /*navbar*/
 .nav-bottom{
+	position: absolute;
+	top: 64px;
 	height: 56px;
 	background-color: rgba(0,0,0,.3);
+	z-index: 10;
 }
 .nav-bottom ul.left{
 	padding: 0 40px;
@@ -67,21 +112,28 @@ header*/
 /*navbar*/
 /*main*/
 main{
-	position: absolute;
 	width: 100%;
-	top: 64px;
-	z-index: -1;
+}
+.banner{
+	position: relative;
 }
 .banner img{
 	width: 100%;
 }
 .banner-text{
 	position: absolute;
-	top: 0;
-	padding: 12% 0 0 11.5%;
+	top: 56px;
+	width: 100%;
 	color: #fff;
 	line-height: 1.17;
 	font-weight: 500;
+	display: flex;
+	justify-content: center;
+}
+.banner-text > div{
+	width: 100%;
+	max-width: 1440px;
+	padding: 8% 0 0 11.5%;
 }
 .banner-text h1{
 	max-width: 452px;
@@ -109,8 +161,10 @@ main{
 }
 /*banner*/
 .actions{
-	margin-top: -16px;
 	padding: 0 40px;
+	max-width: 1440px;
+	margin: 0 auto;
+	margin-top: -16px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -144,20 +198,42 @@ main{
 	align-items: center;
 	justify-content: center;
 }
+.lightcoin .img{
+	background-color: #7D7D7D;
+}
+.lightcoin .desc span{
+	color: #7D7D7D;
+}
+.ripple .img{
+	background-color: #148EC9;
+}
+.ripple .desc span{
+	color: #148EC9;	
+}
+.cash .img{
+	background-color: #65971F;
+}
+.cash .desc span{
+	color: #65971F;	
+}
 /*banner*/
 .registration{
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	flex-flow: column;
 }
 .counters{
 	display: flex;
 	justify-content: center;
+	margin-top: 48px;
+	margin-bottom: -48px;
 }
 .counter{
 	display: flex;
 	flex-direction: column;
+	margin: 0 48px;
 	color: rgba(0, 0, 0, 0.64);
 	font-size: 16px;
 	font-weight: 500;
@@ -174,6 +250,8 @@ main{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	flex: 1;
+	color: #fff;
 }
 .registration p{
 	text-align: center;
@@ -181,6 +259,7 @@ main{
 .registration button{
 	display: flex;
 	max-width: 136px;
+	margin: 0 auto;
 }
 
 .registration img{
@@ -189,4 +268,40 @@ main{
 /*main*/
 
 /*footer*/
+footer{
+}
+footer > div:first-child{
+	padding: 40px;
+	display: flex;
+	justify-content: space-between;
+}
+.social li{
+	display: inline;
+	color: #4F4F4F;
+	margin-right: 16px;
+}
+.lang li{
+	display: inline;
+	font-size: 18px;
+	color: #BDBDBD;
+} 
+.apps li{
+	display: inline;
+	padding-right: 16px;
+}
+.f-right .links{
+	display: inline-flex;
+	min-width: 420px;
+	justify-content: space-between;
+}
+.f-right .links ul li a {
+	color: #828282;
+}
+footer .bottom{
+	height: 56px;
+	background-color: #E0E0E0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 /*footer

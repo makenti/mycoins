@@ -1,0 +1,21 @@
+<svg width="36" height="36" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>iconmonstr-facebook-2</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(744 -900)">
+<g id="iconmonstr-facebook-2">
+<g id="Vector">
+<use xlink:href="#path0_fill" transform="translate(-744 900)"/>
+<use xlink:href="#path0_fill" transform="translate(-744 900)" fill="#3B5998"/>
+<use xlink:href="#path0_fill" transform="translate(-744 900)" fill="#E0E0E0"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="translate(-730 910)"/>
+<use xlink:href="#path1_fill" transform="translate(-730 910)" fill="#4F4F4F"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 18 0C 8.05887 0 0 8.05887 0 18L 0 18C 0 27.9411 8.05887 36 18 36L 18 36C 27.9411 36 36 27.9411 36 18L 36 18C 36 8.05887 27.9411 0 18 0L 18 0Z"/>
+<path id="path1_fill" d="M 6.077 3L 8 3L 8 0L 5.461 0C 3.064 0 2 1.055 2 3.077L 2 5L 0 5L 0 8L 2 8L 2 16L 5 16L 5 8L 7.761 8L 8 5L 5 5L 5 3.889C 5 3.252 5.461 3 6.077 3Z"/>
+</defs>
+</svg>

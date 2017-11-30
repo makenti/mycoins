@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>Starter Template - Materialize</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css"  media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  </head>
+
+  <body>
+    <nav class="nav-extended white">
+      <div class="nav-wrapper">
+        <a id="logo-container" href="#" class="brand-logo">Logo</a>
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <a class="dropdown-button" href="#!" data-activates="dropdown1">
+              <span class="blue-text text-darken-2">Виктория Иванова</span>
+              <span class="blue-text text-darken-2">3456789454</span>
+              <img src="img/avatar.png" alt="" class="circle responsive-img">
+              <i class="material-icons right">arrow_drop_down</i>
+            </a>
+            <ul id="dropdown1" class="dropdown-content">
+              <li><a href="#!">one</a></li>
+              <li><a href="#!">two</a></li>
+              <li class="divider"></li>
+              <li><a href="#!">three</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul id="nav-mobile" class="side-nav">
+          <li><a href="#">Navbar Link</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
+      <div class="row grey darken-4">
+        <div class="col">BCH/GEL 935.000</div>
+        <div class="col">BCH/GEL 935.000</div>
+        <div class="col">BCH/GEL 935.000</div>
+        <div class="col">BCH/GEL 935.000</div>
+        <div class="col">BCH/GEL 935.000</div>
+        <div class="col">BCH/GEL 935.000</div>
+        <div class="col">BCH/GEL 935.000</div>
+        <div class="col">BCH/GEL 935.000</div>
+      </div>
+      <div class="nav-content">
+        <ul class="tabs tabs-transparent">
+          <li class="tab"><a class="active blue-text" href="#bitcoin">BITCOIN</a></li>
+          <li class="tab"><a class="blue-text" href="#litecoin">LITECOIN</a></li>
+          <li class="tab"><a class="blue-text" href="#ripple">RIPPLE</a></li>
+          <li class="tab"><a class="blue-text" href="#bitcoin-cash">BITCOIN CASH</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="">
+      <div class="section">
+        <div id="bitcoin" class="col s12">
+          <div class="row">
+            <div class="col s8">
+              <div class="col">icon</div>
+              <div class="col">0.00 KZT</div>
+              <div class="col">0.00 $</div>
+              <div class="col">0.006453 BTC</div>
+              <div class="col">0.006453 LTC</div>
+              <div class="col">0.006453 XPR</div>
+            </div>
+            <div class="col s4 ">
+              <div class="col">Покупка: 154.32</div>
+              <div class="col">Продажа: 123.123</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s3 left-sidebar">
+              <ul class="collection">
+                <li class="collection-item">Alvin</li>
+                <li class="collection-item">Alvin</li>
+                <li class="collection-item">Alvin</li>
+                <li class="collection-item">Alvin</li>
+              </ul>
+            </div>
+            <div class="col s9">
+              <div class="row">
+                <div class="col s8 offset-s2">
+                  <div class="col s12">
+                    <ul class="tabs">
+                      <li class="tab col s3"><a class="active" href="#buyBlock">Buy</a></li>
+                      <li class="tab col s3"><a href="#sellBlock">Sell</a></li>
+                    </ul>
+                  </div>
+                  <div id="buyBlock" class="col s12">
+                    <form>
+                      <div class="row">
+                        <div class="input-field col s6">
+                          <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                          <label for="first_name">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                          <input id="last_name" type="text" class="validate">
+                          <label for="last_name">Last Name</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <input disabled value="I am not editable" id="disabled" type="text" class="validate">
+                          <label for="disabled">Disabled</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <input id="password" type="password" class="validate">
+                          <label for="password">Password</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <input id="email" type="email" class="validate">
+                          <label for="email">Email</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col s12">
+                          This is an inline input field:
+                          <div class="input-field inline">
+                            <input id="email" type="email" class="validate">
+                            <label for="email" data-error="wrong" data-success="right">Email</label>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+
+                  </div>
+                  <div id="sellBlock" class="col s12">Test 2</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="litecoin" class="col s12">Test 2</div>
+        <div id="ripple" class="col s12">Test 3</div>
+        <div id="bitcoin-cash" class="col s12">Test 4</div>
+
+      </div>
+    </div>
+
+    <footer class="page-footer grey darken-4">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Company Bio</h5>
+            <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+          </div>
+          <div class="col l3 s12">
+            <h5 class="white-text">Settings</h5>
+            <ul>
+              <li><a class="white-text" href="#!">Link 1</a></li>
+              <li><a class="white-text" href="#!">Link 2</a></li>
+              <li><a class="white-text" href="#!">Link 3</a></li>
+              <li><a class="white-text" href="#!">Link 4</a></li>
+            </ul>
+          </div>
+          <div class="col l3 s12">
+            <h5 class="white-text">Connect</h5>
+            <ul>
+              <li><a class="white-text" href="#!">Link 1</a></li>
+              <li><a class="white-text" href="#!">Link 2</a></li>
+              <li><a class="white-text" href="#!">Link 3</a></li>
+              <li><a class="white-text" href="#!">Link 4</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+        </div>
+      </div>
+    </footer>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+  </body>
+</html>

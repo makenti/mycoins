@@ -1,0 +1,192 @@
+header*/
+.nav-wrapper{
+	padding-right: 40px;
+	padding-left: 40px;
+}
+.brand{
+	margin-right: 20px;
+}
+.brand span{
+	color: #4F4F4F;
+	font-size: 24px;
+	line-height: 1.17;
+	font-weight: 600;
+	margin-left: 8px;
+}
+.left li a{
+	margin: 0 5px;
+	color: #4F4F4F;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 500;
+}
+.btn-auth{
+	background-color: #fff;
+	border: 2px solid #2F80ED;
+	border-radius: 18px;
+	height: 36px;
+	font-size: 14px;
+	line-height: 32px;
+	padding: 0 16px;
+	color: #2F80ED;
+	text-transform: uppercase;
+}
+.btn-auth:hover{
+	background-color: #2F80ED;
+	color: #fff;
+}
+.btn-auth:focus{
+	background-color: #1661C7;
+	border-color: #1661C7;
+	color: #fff;
+}
+.reg{
+	background-color: #2F80ED;
+	color: #fff;
+}
+.right li{
+	margin-left: 8px;
+}
+/*header*/
+/*navbar*/
+.nav-bottom{
+	height: 56px;
+	background-color: rgba(0,0,0,.3);
+}
+.nav-bottom ul.left{
+	padding: 0 40px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.nav-bottom ul.left li{
+	height: 56px;
+	line-height: 56px;
+	display: flex;
+}
+/*navbar*/
+/*main*/
+main{
+	position: absolute;
+	width: 100%;
+	top: 64px;
+	z-index: -1;
+}
+.banner img{
+	width: 100%;
+}
+.banner-text{
+	position: absolute;
+	top: 0;
+	padding: 12% 0 0 11.5%;
+	color: #fff;
+	line-height: 1.17;
+	font-weight: 500;
+}
+.banner-text h1{
+	max-width: 452px;
+	font-size: 36px;
+	margin: 0;
+}
+.banner-text p{
+	max-width: 452px;
+	font-size: 14px;
+	margin-top: 0;
+}
+.start{
+	border-color: #fff;
+	color: #2F80ED;
+}
+.start:hover{
+	background-color: #fff;
+	border-color: #fff;
+	color: #2F80ED;	
+}
+.start:focus{
+	background-color: #fff;
+	border-color: #fff;
+	color: #2F80ED;	
+}
+/*banner*/
+.actions{
+	margin-top: -16px;
+	padding: 0 40px;
+	display: flex;
+	justify-content: space-between;
+}
+.actions .card{
+	margin: 0;
+	padding: 16px;
+	height: 134px;
+	border-radius: 16px;
+	width: 328px;
+	display: flex;
+	align-items: center;
+}
+.card .desc{
+	display: flex;
+	flex-direction: column;
+	color: rgba(0, 0, 0, 0.64);
+	font-size: 16px;
+	padding-left: 16px;
+}
+.card .desc span{
+	color: #FFA114;
+	font-size: 24px;
+	font-weight: 600;
+}
+.card .img{
+	width: 56px;
+	height: 56px;
+	background-color: #FFA114;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/*banner*/
+.registration{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.counters{
+	display: flex;
+	justify-content: center;
+}
+.counter{
+	display: flex;
+	flex-direction: column;
+	color: rgba(0, 0, 0, 0.64);
+	font-size: 16px;
+	font-weight: 500;
+}
+.counter span{
+	color: #000;
+	font-size: 34px;
+}
+.registration .foot{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.registration p{
+	text-align: center;
+}
+.registration button{
+	display: flex;
+	max-width: 136px;
+}
+
+.registration img{
+	width: 100%;
+}
+/*main*/
+
+/*footer*/
+/*footer

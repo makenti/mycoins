@@ -1,0 +1,24 @@
+.main{
+	margin-top: 64px;
+}
+.l-status{
+	color: rgba(0,0,0,.54);
+}
+.l-status b{
+	color: #000;
+}
+.l-status .refresh{
+	color: #2F80ED;
+}
+.refresh i{
+	cursor: pointer;
+}
+.r-status{
+	color: rgba(0,0,0,.54);
+}
+.r-status .col:first-child b{
+	color: #27AE60;
+}
+.r-status .col:last-child b{
+	color: #EB5757;
+}

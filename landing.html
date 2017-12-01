@@ -4,7 +4,10 @@
 		<meta charset="utf-8">
 		<title>mycoins</title>
 	</head>
+	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/landing.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/register.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css"  media="screen,projection"/>
 
@@ -28,10 +31,10 @@
 				</ul>
 				<ul class="right hide-on-med-and-down">
 					<li>
-						<button class="waves-effect btn-auth log">Войти</button>
+						<button class="waves-effect btn-auth log" onClick="loginModalOpen()">Войти</button>
 					</li>
 					<li>
-						<button class="waves-effect waves-light btn-auth reg">Регистация</button>
+						<button class="waves-effect waves-light btn-auth reg" href="#register-modal" onClick="registerModalOpen()">Регистация</button>
 					</li>
 					<li>
 						<div class="waves-effect waves-light circle-btn fb">
@@ -151,7 +154,7 @@
 					<p>
 						Lorem Ipsum is simply dummy text of the printing and typesettingLorem Ipsum is simply dummy text of.
 					</p>
-					<button class="btn-auth">Регистрация</button>
+					<button class="btn-auth" onClick="registerModalOpen()">Регистрация</button>
 				</div>
 				<img src="img/subtract.svg" alt="">
 			</div>
@@ -223,12 +226,84 @@
 				© 2018 MyCoins LTD All Rights Reserved | Powered by eMoney
 			</div>
 		</footer>
+    <!-- Modal Structure -->
+    <div id="login-modal" class="modal register-modal">
+      <div class="modal-header">
+        <div class="some-logo">C</div>
+        <div class="header-title">MyCoins</div>
+      </div>
+      <div class="modal-content">
+        <div class="content-title">Авторизация</div>
+        <div class="input-field col s12">
+          <input id="login" type="text" class="validate">
+          <label for="login">Логин</label>
+        </div>
+        <div class="input-field col s12">
+          <input id="password" type="password" class="validate">
+          <label for="password">Пароль</label>
+        </div>
+        <div class="col s12 submit-row">
+            <a class="waves-effect waves-blue btn-flat blue-btn no-padding">Выслать пароль</a>
+            <a class="waves-effect waves-light btn blue-btn round secondary">Войти</a>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="modal-footer-content">
+          <a class="waves-effect waves-light btn blue-btn round" href="#register-modal" onclick="registerModalOpen()">Зарегистрироваться</a>
+          <div class="logo-block">
+            <div class="some-logo">f</div>
+            <div class="some-logo">G</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="register-modal" class="modal register-modal">
+      <div class="modal-header">
+        <div class="some-logo">C</div>
+        <div class="header-title">MyCoins</div>
+      </div>
+      <div class="modal-content">
+        <div class="content-title">Регистрация</div>
+        <div class="col s12">
+          <ul class="tabs">
+            <li class="tab col s3"><a class="active" href="#private">Частный аккаунт</a></li>
+            <li class="tab col s3"><a href="#buisness">Бизнес аккаунт</a></li>
+          </ul>
+        </div>
+        <div id="private" class="col s12">
+          <div class="input-field"><input placeholder="Email" id="email" type="text" class="validate"></div>
+          <div class="input-field"><input placeholder="Пароль" id="password" type="password" class="validate"></div>
+          <div class="input-field"><input placeholder="Подтвердите пароль" id="conf-password" type="password" class="validate"></div>
+          <div class="input-field"><input placeholder="Телефон" id="phone" type="text" class="validate"></div>
+          <div class="input-field"><input placeholder="Имя" id="first_name" type="text" class="validate"></div>
+          <div class="input-field"><input placeholder="Фамилия" id="last_name" type="text" class="validate"></div>
+          <div class="input-field"><input placeholder="Логин" id="login" type="text" class="validate"></div>
+          <div class="input-field"><input placeholder="Дата рождения" id="dob" type="text" class="validate"></div>
+          <div class="input-field"><input placeholder="Пол" id="gender" type="text" class="validate"></div>
+          <div class="input-field"><input placeholder="Гражданство" id="country" type="text" class="validate"></div>
+        </div>
+        <div class="col s12 submit-row">
+            <a class="waves-effect waves-light btn blue-btn round">Создать</a>
+        </div>
+      </div>
+    </div>
 	</body>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
 	<script>
 		$( document ).ready(function(){
 			$(".button-collapse").sideNav();
+			$('#login-modal').modal();
+			$('#register-modal').modal();
 		});
+		function loginModalOpen() {
+		  $('#register-modal').modal('close');
+		  $('#login-modal').modal('open');
+		}
+		function registerModalOpen() {
+		  $('#login-modal').modal('close');
+		  $('#register-modal').modal('open');
+		}
 	</script>
 </html>

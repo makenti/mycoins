@@ -3,74 +3,110 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-    <title>Starter Template - Materialize</title>
-    <!--Import Google Icon Font-->
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/dashboard.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css"  media="screen,projection"/>
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
   </head>
 
   <body>
-    <nav class="nav-extended white">
-      <div class="nav-wrapper">
-        <a id="logo-container" href="#" class="brand-logo">Logo</a>
-        <ul class="right hide-on-med-and-down">
+      <div class="navbar-fixed">
+      <nav class="white">
+        <div class="nav-wrapper">
+          <ul id="nav-mobile" class="left">
+            <li class="brand">
+              <a href="/">
+                <img src="img/logo.svg" alt="mycoins">
+                <span>MyCoins</span>
+              </a>
+            </li>
+            <li class="link hide-on-med-and-down">
+              <a href="#">Пополнить баланс</a>
+            </li>
+            <li class="link hide-on-med-and-down">
+              <a href="#">Обналичить деньги</a></li>
+            </li>
+          </ul>
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <button class="waves-effect btn-auth log" onClick="loginModalOpen()">Войти</button>
+            </li>
+            <li>
+              <button class="waves-effect waves-light btn-auth reg" href="#register-modal" onClick="registerModalOpen()">Регистация</button>
+            </li>
+            <li>
+              <div class="waves-effect waves-light circle-btn fb">
+                <img src="img/fb-white.svg" alt="mycoins">
+              </div>
+            </li>
+            <li>
+              <div class="waves-effect waves-light circle-btn gplus"><img src="img/gplus-white.svg" alt="mycoins"></div>
+            </li>
+          </ul>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="side-nav right" id="mobile-demo">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">JavaScript</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav class="nav-bottom">
+        <ul class="left statuses">
           <li>
-            <a class="dropdown-button" href="#!" data-activates="dropdown1">
-              <span class="blue-text text-darken-2">Виктория Иванова</span>
-              <span class="blue-text text-darken-2">3456789454</span>
-              <img src="img/avatar.png" alt="" class="circle responsive-img">
-              <i class="material-icons right">arrow_drop_down</i>
-            </a>
-            <ul id="dropdown1" class="dropdown-content">
-              <li><a href="#!">one</a></li>
-              <li><a href="#!">two</a></li>
-              <li class="divider"></li>
-              <li><a href="#!">three</a></li>
-            </ul>
+            BCH/GEL 935.000
+          </li>
+          <li>
+            BCH/GEL 935.000
+          </li>
+          <li>
+            BCH/GEL 935.000
+          </li>
+          <li>
+            BCH/GEL 935.000
+          </li>
+          <li>
+            BCH/GEL 935.000
+          </li>
+          <li>
+            BCH/GEL 935.000
+          </li>
+          <li>
+            BCH/GEL 935.000
+          </li>
+          <li>
+            BCH/GEL 935.000
           </li>
         </ul>
-        <ul id="nav-mobile" class="side-nav">
-          <li><a href="#">Navbar Link</a></li>
-        </ul>
-        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-      </div>
-      <div class="row grey darken-4">
-        <div class="col">BCH/GEL 935.000</div>
-        <div class="col">BCH/GEL 935.000</div>
-        <div class="col">BCH/GEL 935.000</div>
-        <div class="col">BCH/GEL 935.000</div>
-        <div class="col">BCH/GEL 935.000</div>
-        <div class="col">BCH/GEL 935.000</div>
-        <div class="col">BCH/GEL 935.000</div>
-        <div class="col">BCH/GEL 935.000</div>
-      </div>
-      <div class="nav-content">
-        <ul class="tabs tabs-transparent">
-          <li class="tab"><a class="active blue-text" href="#bitcoin">BITCOIN</a></li>
-          <li class="tab"><a class="blue-text" href="#litecoin">LITECOIN</a></li>
-          <li class="tab"><a class="blue-text" href="#ripple">RIPPLE</a></li>
-          <li class="tab"><a class="blue-text" href="#bitcoin-cash">BITCOIN CASH</a></li>
-        </ul>
-      </div>
-    </nav>
+      </nav>
+    </div>
 
-    <div class="">
+    <div class="main">
+      <div class="col s12">
+        <ul class="tabs">
+          <li class="tab"><a href="#test1">Bitcoin</a></li>
+          <li class="tab"><a class="active" href="#test2">Test 2</a></li>
+          <li class="tab"><a href="#test4">Test 4</a></li>
+        </ul>
+      </div>
       <div class="section">
         <div id="bitcoin" class="col s12">
           <div class="row">
-            <div class="col s8">
-              <div class="col">icon</div>
-              <div class="col">0.00 KZT</div>
-              <div class="col">0.00 $</div>
-              <div class="col">0.006453 BTC</div>
-              <div class="col">0.006453 LTC</div>
-              <div class="col">0.006453 XPR</div>
+            <div class="col s8 l-status">
+              <div class="col refresh"><i class="material-icons">refresh</i></div>
+              <div class="col"><b>0.00</b> KZT</div>
+              <div class="col"><b>0.00</b> $</div>
+              <div class="col"><b>0.006453</b> BTC</div>
+              <div class="col"><b>0.006453</b> LTC</div>
+              <div class="col"><b>0.006453</b> XPR</div>
             </div>
-            <div class="col s4 ">
-              <div class="col">Покупка: 154.32</div>
-              <div class="col">Продажа: 123.123</div>
+            <div class="col s4 r-status">
+              <div class="col">Покупка: <b>154.32</b></div>
+              <div class="col">Продажа: <b>123.123</b></div>
             </div>
           </div>
           <div class="row">
@@ -146,40 +182,74 @@
       </div>
     </div>
 
-    <footer class="page-footer grey darken-4">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">Company Bio</h5>
-            <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-          </div>
-          <div class="col l3 s12">
-            <h5 class="white-text">Settings</h5>
+    <footer>
+      <div>
+        <div class="f-left">
+          <ul class="socials">
+            <li><a href="#"><img src="img/help.svg" alt=""></a></li>
+            <li><a href="#"><img src="img/phone.svg" alt=""></a></li>
+            <li><a href="#"><img src="img/facebook.svg" alt=""></a></li>
+            <li><a href="#"><img src="img/skype.svg" alt=""></a></li>
+          </ul>
+          <ul class="lang">
+            <li>ENG</li>
+            <li>RUS</li>
+          </ul>
+          <ul class="apps">
+            <li><img src="img/google.svg" alt=""></li>
+            <li><img src="img/apple.svg" alt=""></li>
+            <li><img src="img/microsoft.svg" alt=""></li> 
+          </ul>
+        </div>
+        <div class="f-right">
+          <div class="links">
             <ul>
-              <li><a class="white-text" href="#!">Link 1</a></li>
-              <li><a class="white-text" href="#!">Link 2</a></li>
-              <li><a class="white-text" href="#!">Link 3</a></li>
-              <li><a class="white-text" href="#!">Link 4</a></li>
+              <li>
+                <a href="">About us</a>
+              </li>
+              <li>
+                <a href="">Blog</a>
+              </li>
+              <li>
+                <a href="">Prices and Limits</a>
+              </li>
+              <li>
+                <a href="">FAQ</a>
+              </li>
+              <li>
+                <a href="">Contact</a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="">Terms of Use</a>
+              </li>
+              <li>
+                <a href="">AML Policy</a>
+              </li>
+              <li>
+                <a href="">Confidentiality and Security</a>
+              </li>
+              <li>
+                <a href="">Terms of Services</a>
+              </li>
+              <li>
+                <a href="">Data Security Policy</a>
+              </li>
             </ul>
           </div>
-          <div class="col l3 s12">
-            <h5 class="white-text">Connect</h5>
-            <ul>
-              <li><a class="white-text" href="#!">Link 1</a></li>
-              <li><a class="white-text" href="#!">Link 2</a></li>
-              <li><a class="white-text" href="#!">Link 3</a></li>
-              <li><a class="white-text" href="#!">Link 4</a></li>
-            </ul>
-          </div>
+          <ul class="carts">
+            <li><img src="" alt=""><img src="img/mastercard.svg" alt=""></li>
+            <li><img src="img/visa.svg" alt=""></li>
+            <li><img src="img/emoney.svg" alt=""></li>
+          </ul>
         </div>
       </div>
-      <div class="footer-copyright">
-        <div class="container">
-          Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-        </div>
+      <div class="bottom">
+        © 2018 MyCoins LTD All Rights Reserved | Powered by eMoney
       </div>
     </footer>
-    <!--Import jQuery before materialize.js-->
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
   </body>

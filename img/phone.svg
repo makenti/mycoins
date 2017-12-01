@@ -1,21 +1,12 @@
-<svg width="36" height="36" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<title>iconmonstr-google-plus-2</title>
+<svg width="12" height="12" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Vector</title>
 <desc>Created using Figma</desc>
-<g id="Canvas" transform="translate(796 -900)">
-<g id="iconmonstr-google-plus-2">
+<g id="Canvas" transform="translate(784 -912)">
 <g id="Vector">
-<use xlink:href="#path0_fill" transform="translate(-796 900)" fill="#25C448"/>
-<use xlink:href="#path0_fill" transform="translate(-796 900)" fill="#E0E0E0"/>
-</g>
-<g id="ic_call_black_24px">
-<g id="Vector">
-<use xlink:href="#path1_fill" transform="translate(-784 912)" fill="#4F4F4F"/>
-</g>
-</g>
+<use xlink:href="#path0_fill" transform="translate(-784 912)" fill="#4F4F4F"/>
 </g>
 </g>
 <defs>
-<path id="path0_fill" d="M 18 0C 8.05887 0 0 8.05887 0 18L 0 18C 0 27.9411 8.05887 36 18 36L 18 36C 27.9411 36 36 27.9411 36 18L 36 18C 36 8.05887 27.9411 0 18 0L 18 0Z"/>
-<path id="path1_fill" d="M 2.41333 5.19333C 3.37333 7.08 4.92 8.62 6.80667 9.58667L 8.27333 8.12C 8.45333 7.94 8.72 7.88 8.95333 7.96C 9.7 8.20667 10.5067 8.34 11.3333 8.34C 11.7 8.34 12 8.64 12 9.00667L 12 11.3333C 12 11.7 11.7 12 11.3333 12C 5.07333 12 0 6.92667 0 0.666667C 0 0.3 0.3 0 0.666667 0L 3 0C 3.36667 0 3.66667 0.3 3.66667 0.666667C 3.66667 1.5 3.8 2.3 4.04667 3.04667C 4.12 3.28 4.06667 3.54 3.88 3.72667L 2.41333 5.19333Z"/>
+<path id="path0_fill" d="M 2.41333 5.19333C 3.37333 7.08 4.92 8.62 6.80667 9.58667L 8.27333 8.12C 8.45333 7.94 8.72 7.88 8.95333 7.96C 9.7 8.20667 10.5067 8.34 11.3333 8.34C 11.7 8.34 12 8.64 12 9.00667L 12 11.3333C 12 11.7 11.7 12 11.3333 12C 5.07333 12 0 6.92667 0 0.666667C 0 0.3 0.3 0 0.666667 0L 3 0C 3.36667 0 3.66667 0.3 3.66667 0.666667C 3.66667 1.5 3.8 2.3 4.04667 3.04667C 4.12 3.28 4.06667 3.54 3.88 3.72667L 2.41333 5.19333Z"/>
 </defs>
 </svg>

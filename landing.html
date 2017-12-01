@@ -9,19 +9,20 @@
 	<link type="text/css" rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css"  media="screen,projection"/>
 
 	<body>
+		<div class="navbar-fixed">
 		<nav class="white">
 			<div class="nav-wrapper">
-				<ul id="nav-mobile" class="left hide-on-med-and-down">
+				<ul id="nav-mobile" class="left">
 					<li class="brand">
 						<a href="/">
 							<img src="img/logo.svg" alt="mycoins">
 							<span>MyCoins</span>
 						</a>
 					</li>
-					<li class="link">
+					<li class="link hide-on-med-and-down">
 						<a href="#">Пополнить баланс</a>
 					</li>
-					<li class="link">
+					<li class="link hide-on-med-and-down">
 						<a href="#">Обналичить деньги</a></li>
 					</li>
 				</ul>
@@ -41,11 +42,16 @@
 						<div class="waves-effect waves-light circle-btn gplus"><img src="img/gplus-white.svg" alt="mycoins"></div>
 					</li>
 				</ul>
+				<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+				<ul class="side-nav right" id="mobile-demo">
+	        <li><a href="sass.html">Sass</a></li>
+	        <li><a href="badges.html">Components</a></li>
+	        <li><a href="collapsible.html">JavaScript</a></li>
+	      </ul>
 			</div>
-			
 		</nav>
 		<nav class="nav-bottom">
-      <ul class="left">
+      <ul class="left statuses">
       	<li>
       		BCH/GEL 935.000
       	</li>
@@ -72,6 +78,7 @@
       	</li>
       </ul>
     </nav>
+  </div>
 		<main>
 			<div class="banner">
 				<img src="img/banner.png" alt="mycoins">
@@ -132,13 +139,13 @@
 						Постоянных пользователей
 					</div>
 					<div class="counter">
-						<span>1574</span>
-						Постоянных пользователей
+						<span>20 000+</span>
+						Ежедневных трансакций
 					</div>
 					<div class="counter">
-						<span>1574</span>
-						Постоянных пользователей
-					</div>
+						<span>185 000 $</span>
+						Денежных средств вложено 
+					</div> 
 				</div>
 				<div class="foot">
 					<p>
@@ -152,11 +159,11 @@
 		<footer>
 			<div>
 				<div class="f-left">
-					<ul class="social">
-						<li><img src="img/help.svg" alt=""></li>
-						<li><img src="img/phone.svg" alt=""></li>
-						<li><img src="img/facebook.svg" alt=""></li>
-						<li><img src="img/skype.svg" alt=""></li>
+					<ul class="socials">
+						<li><a href="#"><img src="img/help.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/phone.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/facebook.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/skype.svg" alt=""></a></li>
 					</ul>
 					<ul class="lang">
 						<li>ENG</li>
@@ -206,9 +213,9 @@
 						</ul>
 					</div>
 					<ul class="carts">
-						<li><img src="" alt=""></li>
-						<li><img src="" alt=""></li>
-						<li><img src="" alt=""></li>
+						<li><img src="" alt=""><img src="img/mastercard.svg" alt=""></li>
+						<li><img src="img/visa.svg" alt=""></li>
+						<li><img src="img/emoney.svg" alt=""></li>
 					</ul>
 				</div>
 			</div>
@@ -219,4 +226,9 @@
 	</body>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+	<script>
+		$( document ).ready(function(){
+			$(".button-collapse").sideNav();
+		});
+	</script>
 </html>

@@ -11,7 +11,7 @@
     <link type="text/css" rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css"  media="screen,projection"/>
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
-  </head>
+  </head> 
 
   <body>
       <div class="navbar-fixed">
@@ -87,10 +87,11 @@
 
     <div class="main">
       <div class="col s12">
-        <ul class="tabs">
+        <ul class="tabs coin-tabs">
           <li class="tab"><a href="#test1">Bitcoin</a></li>
-          <li class="tab"><a class="active" href="#test2">Test 2</a></li>
-          <li class="tab"><a href="#test4">Test 4</a></li>
+          <li class="tab"><a href="#test2">Litecoin</a></li>
+          <li class="tab"><a href="#test4">Ripple</a></li> 
+          <li class="tab"><a href="#test4">Bitcoin cash</a></li> 
         </ul>
       </div>
       <div class="section">
@@ -111,20 +112,24 @@
           </div>
           <div class="row">
             <div class="col s3 left-sidebar">
-              <ul class="collection">
-                <li class="collection-item">Alvin</li>
-                <li class="collection-item">Alvin</li>
-                <li class="collection-item">Alvin</li>
-                <li class="collection-item">Alvin</li>
-              </ul>
+              <div class="collection">
+                <a href="#!" class="collection-item">Покупка/Продажа</a>
+                <a href="#!" class="collection-item">Отправка/Получение</a>
+                <a href="#!" class="collection-item">Мой Bitcoin адресс</a>
+                <a href="#!" class="collection-item">Пополить баланс</a>
+                <a href="#!" class="collection-item">Обналичить деньги</a>
+                <a href="#!" class="collection-item">Статистика курса</a>
+                <a href="#!" class="collection-item">Личная информация</a>
+                <a href="#!" class="collection-item">Трансакции</a>
+              </div>
             </div>
             <div class="col s9">
               <div class="row">
                 <div class="col s8 offset-s2">
                   <div class="col s12">
-                    <ul class="tabs">
-                      <li class="tab col s3"><a class="active" href="#buyBlock">Buy</a></li>
-                      <li class="tab col s3"><a href="#sellBlock">Sell</a></li>
+                    <ul class="tabs buy-sell">
+                      <li class="tab col s3"><a class="active" href="#buyBlock">Купить</a></li>
+                      <li class="tab col s3"><a href="#sellBlock">Продать</a></li>
                     </ul>
                   </div>
                   <div id="buyBlock" class="col s12">
@@ -175,9 +180,9 @@
             </div>
           </div>
         </div>
-        <div id="litecoin" class="col s12">Test 2</div>
+        <!-- <div id="litecoin" class="col s12">Test 2</div>
         <div id="ripple" class="col s12">Test 3</div>
-        <div id="bitcoin-cash" class="col s12">Test 4</div>
+        <div id="bitcoin-cash" class="col s12">Test 4</div> -->
 
       </div>
     </div>

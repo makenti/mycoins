@@ -1,6 +1,16 @@
 .main{
 	margin-top: 64px;
 }
+ul.coin-tabs li.tab a,
+ul.coin-tabs li.tab:hover a,
+ul.coin-tabs li.tab a.active{
+	color: #2F80ED;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+ul.coin-tabs li.indicator{
+	background-color: #2F80ED; 
+}
 .l-status{
 	color: rgba(0,0,0,.54);
 }
@@ -21,4 +31,27 @@
 }
 .r-status .col:last-child b{
 	color: #EB5757;
+}
+.left-sidebar{
+	border-left: 2px solid rgba(0, 0, 0, 0.12);
+}
+.left-sidebar .collection{
+	border: none;
+}
+.left-sidebar .collection .collection-item{
+	color: rgba(0, 0, 0, 0.87);
+	border: none;
+}
+.left-sidebar ul li:active{
+	border-left: 4px solid #2F80ED;
+}
+ul.buy-sell li.tab a,
+ul.buy-sell li.tab:hover a,
+ul.buy-sell li.tab a.active{
+	color: #2F80ED;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+ul.buy-sell li.indicator{
+	background-color: #2F80ED; 
 }
